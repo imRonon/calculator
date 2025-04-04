@@ -9,6 +9,9 @@ let resltNum = () => {
     let answer = eval(inpEnter.value);
     let length = inpEnter.value.length;
 
+    if (length < 11) {
+        inpAnswer.style.fontSize = "45px";
+    }
     if (length > 12) {
         inpAnswer.style.fontSize = "35px";
     }
@@ -35,6 +38,7 @@ let resltNum = () => {
 let clearInp = () => {
     inpEnter.value = "";
     inpAnswer.value = "";
+    inpAnswer.style.fontSize = "45px";
 };
 let delLast = () => {
     inpEnter.value = inpEnter.value.slice(0, -1);
