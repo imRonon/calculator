@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="main.css" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="./icons/image.png" />
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="panel">
+                <input
+                    type="text"
+                    class="mini"
+                    placeholder="0,00"
+                    name=""
+                    id=""
+                    readonly
+                />
+                <input
+                    type="text"
+                    class="answer"
+                    readonly
+                    placeholder="0,00"
+                    name=""
+                    id=""
+                />
+            </div>
+            <div class="btns">
+                <div class="btn-holders">
+                    <button class="btn" id="percent" onclick="interBtn('%')">
+                        %
+                    </button>
+                    <button class="btn" id="clear" onclick="clearInp()">
+                        C
+                    </button>
+                    <button class="btn" id="del" onclick="delLast()">
+                        <i class="material-icons">&#xe14a;</i>
+                    </button>
+                    <button
+                        class="btn command"
+                        id="devide"
+                        onclick="interBtn('/')"
+                    >
+                        /
+                    </button>
+                </div>
+                <div class="btn-holders">
+                    <button class="btn" id="seven" onclick="interBtn('7')">
+                        7
+                    </button>
+                    <button class="btn" id="eight" onclick="interBtn('8')">
+                        8
+                    </button>
+                    <button class="btn" id="nine" onclick="interBtn('9')">
+                        9
+                    </button>
+                    <button
+                        class="btn command"
+                        id="multiply"
+                        onclick="interBtn('*')"
+                    >
+                        *
+                    </button>
+                </div>
+                <div class="btn-holders">
+                    <button class="btn" id="four" onclick="interBtn('4')">
+                        4
+                    </button>
+                    <button class="btn" id="five" onclick="interBtn('5')">
+                        5
+                    </button>
+                    <button class="btn" id="six" onclick="interBtn('6')">
+                        6
+                    </button>
+                    <button
+                        class="btn command"
+                        id="minus"
+                        onclick="interBtn('-')"
+                    >
+                        -
+                    </button>
+                </div>
+                <div class="btn-holders">
+                    <button class="btn" id="one" onclick="interBtn('1')">
+                        1
+                    </button>
+                    <button class="btn" id="two" onclick="interBtn('2')">
+                        2
+                    </button>
+                    <button class="btn" id="three" onclick="interBtn('3')">
+                        3
+                    </button>
+                    <button
+                        class="btn command"
+                        id="plus"
+                        onclick="interBtn('+')"
+                    >
+                        +
+                    </button>
+                </div>
+                <div class="btn-holders">
+                    <button class="btn" id="zero" onclick="interBtn('0')">
+                        0
+                    </button>
+                    <button class="btn" id="fraction" onclick="interBtn('.')">
+                        .
+                    </button>
+                    <button
+                        class="btn equal-sign"
+                        id="equal"
+                        onclick="resltNum()"
+                    >
+                        =
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
